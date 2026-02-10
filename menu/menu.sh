@@ -313,4 +313,4 @@ case $opt in
 13) clear ; bash POLDER/menu/bot.sh ;;
 esac
 
-[13] BOT MENU (CEK USER | NOTIF LIMIT | BACKUP)
+
