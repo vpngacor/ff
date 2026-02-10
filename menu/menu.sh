@@ -1,30 +1,26 @@
 #!/bin/bash
 clear
 
-# ===== WARNA =====
 NC='\033[0m'
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[0;33m'
-CYAN='\033[0;36m'
 z="\033[96m"
 r="\033[1;31m"
+RED='\033[0;31m'
 
-# ===== HEADER =====
-echo -e "${CYAN}========================================${NC}"
-echo -e "${CYAN}               VPN MENU                 ${NC}"
-echo -e "${CYAN}========================================${NC}"
+# ===== HEADER RAPIH =====
+echo -e "${z}┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓${NC}"
+echo -e "${z}┃                 BADUD VPN                    ┃${NC}"
+echo -e "${z}┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
 
 # ===== MENU =====
-echo -e "  ${z}┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓${NC}"
-echo -e "  ${z}│ [${r}01${NC}] ${z}SSH MENU        ${NC} [${r}07${NC}] ${z}STATUS RUNNING${NC}"
-echo -e "  ${z}│ [${r}02${NC}] ${z}VMESS MENU      ${NC} [${r}08${NC}] ${z}PIX SSH${NC}"
-echo -e "  ${z}│ [${r}03${NC}] ${z}VLESS MENU      ${NC} [${r}09${NC}] ${z}BACKUP & RESTORE${NC}"
-echo -e "  ${z}│ [${r}04${NC}] ${z}TROJAN MENU     ${NC} [${r}10${NC}] ${z}INSTALL UDP${NC}"
-echo -e "  ${z}│ [${r}05${NC}] ${z}SETTING MENU    ${NC} [${r}11${NC}] ${z}ADD DOMAIN${NC}"
-echo -e "  ${z}│ [${r}06${NC}] ${z}UPDATE SCRIPT   ${NC} [${r}12${NC}] ${z}ZIPVPN${NC}"
-echo -e "  ${z}│ [${r}13${NC}] ${z}UPBCK${NC}"
-echo -e "  ${z}┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
+echo -e "${z}┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓${NC}"
+echo -e "${z}┃ [${r}01${NC}${z}] SSH MENU        [${r}07${NC}${z}] STATUS RUNNING   ┃${NC}"
+echo -e "${z}┃ [${r}02${NC}${z}] VMESS MENU      [${r}08${NC}${z}] PIX SSH          ┃${NC}"
+echo -e "${z}┃ [${r}03${NC}${z}] VLESS MENU      [${r}09${NC}${z}] BACKUP & RESTORE ┃${NC}"
+echo -e "${z}┃ [${r}04${NC}${z}] TROJAN MENU     [${r}10${NC}${z}] INSTALL UDP      ┃${NC}"
+echo -e "${z}┃ [${r}05${NC}${z}] SETTING MENU    [${r}11${NC}${z}] ADD DOMAIN       ┃${NC}"
+echo -e "${z}┃ [${r}06${NC}${z}] UPDATE SCRIPT   [${r}12${NC}${z}] ZIPVPN           ┃${NC}"
+echo -e "${z}┃ [${r}13${NC}${z}] UPBCK                                ┃${NC}"
+echo -e "${z}┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
 
 read -p " Select From Options [ 1 - 13 ] >> " opt
 
@@ -46,7 +42,7 @@ clear
 wget https://raw.githubusercontent.com/vpngacor/ff/main/backup/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 ;;
 *)
-echo -e "${RED}Pilihan tidak valid!${NC}"
+echo -e "${RED}Pilihan tidak valid!"
 sleep 1
 menu
 ;;
