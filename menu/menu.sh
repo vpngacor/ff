@@ -11,16 +11,16 @@ echo -e "${C}┌─────────────────────�
 echo -e "${C}│                  BADUD VPN                   │${NC}"
 echo -e "${C}└──────────────────────────────────────────────┘${NC}"
 
-# ===== MENU BOX (KANAN LURUS) =====
-echo -e "${C}┌──────────────────────────────────────────────┐${NC}"
-echo -e "${C}│ [${R}01${NC}${C}] SSH MENU        [${R}07${NC}${C}] STATUS RUNNING   ${C}│${NC}"
-echo -e "${C}│ [${R}02${NC}${C}] VMESS MENU      [${R}08${NC}${C}] PIX SSH          ${C}│${NC}"
-echo -e "${C}│ [${R}03${NC}${C}] VLESS MENU      [${R}09${NC}${C}] BACKUP & RESTORE ${C}│${NC}"
-echo -e "${C}│ [${R}04${NC}${C}] TROJAN MENU     [${R}10${NC}${C}] INSTALL UDP      ${C}│${NC}"
-echo -e "${C}│ [${R}05${NC}${C}] SETTING MENU    [${R}11${NC}${C}] ADD DOMAIN       ${C}│${NC}"
-echo -e "${C}│ [${R}06${NC}${C}] UPDATE SCRIPT   [${R}12${NC}${C}] ZIPVPN           ${C}│${NC}"
-echo -e "${C}│ [${R}13${NC}${C}] UPBCK                                  ${C}│${NC}"
-echo -e "${C}└──────────────────────────────────────────────┘${NC}"
+# ===== MENU (TANPA GARIS KANAN) =====
+echo -e "${C}┌──────────────────────────────────────────────${NC}"
+echo -e "${C}│ [${R}01${NC}${C}] SSH MENU        [${R}07${NC}${C}] STATUS RUNNING"
+echo -e "${C}│ [${R}02${NC}${C}] VMESS MENU      [${R}08${NC}${C}] PIX SSH"
+echo -e "${C}│ [${R}03${NC}${C}] VLESS MENU      [${R}09${NC}${C}] BACKUP & RESTORE"
+echo -e "${C}│ [${R}04${NC}${C}] TROJAN MENU     [${R}10${NC}${C}] INSTALL UDP"
+echo -e "${C}│ [${R}05${NC}${C}] SETTING MENU    [${R}11${NC}${C}] ADD DOMAIN"
+echo -e "${C}│ [${R}06${NC}${C}] UPDATE SCRIPT   [${R}12${NC}${C}] ZIPVPN"
+echo -e "${C}│ [${R}13${NC}${C}] UPBCK"
+echo -e "${C}└──────────────────────────────────────────────${NC}"
 
 read -p " Select From Options [ 1 - 13 ] >> " opt
 
@@ -43,7 +43,4 @@ wget https://raw.githubusercontent.com/vpngacor/ff/main/backup/set-br.sh && chmo
 ;;
 *)
 echo -e "${RED}Pilihan tidak valid!"
-sleep 1
-menu
-;;
-esac
+sleep
