@@ -296,7 +296,7 @@ echo -e "       ${z}|  ${r}⇲ ${NC}${z}Expired :${NC} $Exp"
 echo -e "       ${z}┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\033[0m${NC}"
 echo -e "  ${KIRI}${a} ${KANAN}"
 echo -e "${IWhite}"
-read -p " Select From Options [ 1 - 11 ] >>   "  opt
+read -p " Select From Options [ 1 - 13 ] >>   "  opt
 case $opt in
 1) clear ; menu-ssh ;;
 2) clear ; menu-vmess ;;
@@ -310,6 +310,7 @@ case $opt in
 10) clear ; sudo wget -O /usr/local/bin/zi.sh https://raw.githubusercontent.com/leryyvpn/udp-zivpn/main/zi.sh && sudo chmod +x /usr/local/bin/zi.sh && sudo zi.sh ;;
 11) clear ; add-host ;; 
 12) zivpn ;;
+13) clear ; bash POLDER/menu/bot.sh ;;
 esac
 
 [13] BOT MENU (CEK USER | NOTIF LIMIT | BACKUP)
