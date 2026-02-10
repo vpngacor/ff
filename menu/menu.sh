@@ -1,18 +1,19 @@
 #!/bin/bash
 clear
 
+# ===== WARNA =====
 NC='\033[0m'
 z="\033[96m"
 r="\033[1;31m"
 RED='\033[0;31m'
 
-# ===== HEADER RAPIH =====
-echo -e "${z}┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓${NC}"
+# ===== HEADER (SEJAJAR DENGAN MENU) =====
+echo -e "${z}┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓${NC}"
 echo -e "${z}┃                 BADUD VPN                    ┃${NC}"
-echo -e "${z}┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
+echo -e "${z}┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
 
 # ===== MENU =====
-echo -e "${z}┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓${NC}"
+echo -e "${z}┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓${NC}"
 echo -e "${z}┃ [${r}01${NC}${z}] SSH MENU        [${r}07${NC}${z}] STATUS RUNNING   ┃${NC}"
 echo -e "${z}┃ [${r}02${NC}${z}] VMESS MENU      [${r}08${NC}${z}] PIX SSH          ┃${NC}"
 echo -e "${z}┃ [${r}03${NC}${z}] VLESS MENU      [${r}09${NC}${z}] BACKUP & RESTORE ┃${NC}"
@@ -20,7 +21,7 @@ echo -e "${z}┃ [${r}04${NC}${z}] TROJAN MENU     [${r}10${NC}${z}] INSTALL UDP
 echo -e "${z}┃ [${r}05${NC}${z}] SETTING MENU    [${r}11${NC}${z}] ADD DOMAIN       ┃${NC}"
 echo -e "${z}┃ [${r}06${NC}${z}] UPDATE SCRIPT   [${r}12${NC}${z}] ZIPVPN           ┃${NC}"
 echo -e "${z}┃ [${r}13${NC}${z}] UPBCK                                ┃${NC}"
-echo -e "${z}┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
+echo -e "${z}┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
 
 read -p " Select From Options [ 1 - 13 ] >> " opt
 
