@@ -160,7 +160,7 @@ fram=$( free -m | awk 'NR==2 {print $4}' )
 nginx=$( systemctl status nginx | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 #################
 r="\033[1;31m"  #REDTERANG
-a=" ${CYAN}TERIMAKASIH SUDAH MENGGUNAKAN SCRIPT BY BAYU & DANS"
+a=" ${CYAN}TERIMAKASIH SUDAH MENGGUNAKAN SCRIPT BY BADBUD"
 ################
 # // Clear
 clear
@@ -260,7 +260,7 @@ read -n 1 -s -r -p "Press any key to back on menu"
 menu
 }
 clear 
-figlet 'Bayu & Dans' | lolcat
+figlet 'B A D B U D' | lolcat
 echo -e "  ${z}┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\033[0m${NC}"
 echo -e "  ${z}|\033[41m           ⇱ INFORMATIONS VPS ⇲             ${NC}${z}|${NC}"
 echo -e "  ${z}┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\033[0m${NC}"
