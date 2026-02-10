@@ -310,4 +310,3 @@ case $opt in
 10) clear ; sudo wget -O /usr/local/bin/zi.sh https://raw.githubusercontent.com/leryyvpn/udp-zivpn/main/zi.sh && sudo chmod +x /usr/local/bin/zi.sh && sudo zi.sh ;;
 11) clear ; add-host ;; 
 12) zivpn ;;
-13) clear ; bash POLDER/menu/bot.sh ;;
